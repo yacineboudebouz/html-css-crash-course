@@ -1,0 +1,27 @@
+h1 {
+    color: chocolate;
+    background-color: slategrey;
+    font-size: 50px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+p {
+    color: slategray;
+    text-align: left;
+    line-height: 30px;
+    letter-spacing: 3px;
+    column-count: 4;
+    column-gap: 60px;
+}
+
+ul {
+    /* border: 4px solid cadetblue ; */
+    border-bottom: 4px dotted cadetblue;
+    border-left: 4px solid cadetblue;
+}
+
+li {
+    list-style-type: upper-roman;
+    text-shadow: 2px 2px lightslategray;
+}
