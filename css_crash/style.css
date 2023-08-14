@@ -1,5 +1,37 @@
-div {
-    border: 2px solid crimson;
-    margin: 20px;
+p.first {
+    color: blueviolet;
+}
+
+p.second {
+    color: rgb(23, 193, 23);
+}
+
+p.second.third {
+    border: 1px dashed;
+}
+
+#content {
+    background-color: rgb(108, 108, 102);
     padding: 20px;
+}
+
+div .first {
+    color: purple;
+}
+
+
+/* 
+the star for selecting any href contains that word, dollar for selecting any href ending with that word
+*/
+
+a[href="www.google.com"] {
+    background-color: rgb(36, 180, 36);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a[href*="facebook"] {
+    color: bisque;
 }
