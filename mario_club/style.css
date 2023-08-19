@@ -1,0 +1,74 @@
+header {
+    position: fixed;
+    background-color: #f63232;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header h1 {
+    color: white;
+    border: 8px solid white;
+    padding: 6px 12px;
+    /*first for t-b second for l-r */
+    display: inline-block;
+    border-radius: 36px;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    max-width: 100%;
+}
+
+.banner .welcome {
+    background-color: #feb614;
+    color: white;
+    padding: 20px;
+    position: absolute;
+    left: 0px;
+    top: 30%;
+}
+
+.banner h2 {
+    font-size: 74px;
+}
+
+.banner h2 span {
+    font-size: 1.3em;
+    /*this take the value of it's parent and multiply it with 1.3 */
+}
+
+nav {
+    background-color: #f4f4f4;
+    padding: 20px;
+    position: sticky;
+    top: 148px;
+}
+
+nav ul {
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav li {
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #4b4b4b;
+}
+
+nav li a.join {
+    color: #f63232;
+}
