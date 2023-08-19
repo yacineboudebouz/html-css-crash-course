@@ -134,7 +134,7 @@ article p {
     padding: 10px 20px;
     font-size: 24px;
     border-radius: 28px;
-    border: 4px solid wheat;
+    border: 4px solid white;
 }
 
 footer {
@@ -142,4 +142,44 @@ footer {
     color: white;
     padding: 10px;
     text-align: center;
+}
+
+
+/* pseudo classes */
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+.images li img:hover {
+    position: relative;
+    top: -4px;
+}
+
+.joinform input:focus {
+    border: 4px solid #f63232;
+    outline: none;
+}
+
+.joinform input:valid {
+    border: 4px solid #71d300;
+    outline: none;
+}
+
+article p::first-line {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+section p::first-letter {
+    font-size: 1.5em;
+}
+
+p::selection {
+    background-color: #f63232;
+    color: white;
+}
+
+p::after {
+    content: '...';
 }
