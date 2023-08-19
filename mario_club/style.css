@@ -1,3 +1,13 @@
+body,
+ul,
+li,
+h2,
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header {
     position: fixed;
     background-color: #f63232;
@@ -49,7 +59,7 @@ nav {
     background-color: #f4f4f4;
     padding: 20px;
     position: sticky;
-    top: 148px;
+    top: 106px;
 }
 
 nav ul {
@@ -59,6 +69,7 @@ nav ul {
 }
 
 nav li {
+    transition: color 0.3s, text-decoration 0.3s;
     width: 25%;
     display: inline-block;
     font-size: 24px;
@@ -71,4 +82,36 @@ nav li a {
 
 nav li a.join {
     color: #f63232;
+}
+
+main {
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+article h2 {
+    color: #f63232;
+    font-size: 48px;
+}
+
+article p {
+    line-height: 2em;
+    color: #4b4b4b;
+}
+
+.images {
+    text-align: center;
+    margin: 80px 0;
+}
+
+.images li {
+    display: inline-block;
+    width: 40%;
+}
+
+.images li img {
+    max-width: 100%;
 }
