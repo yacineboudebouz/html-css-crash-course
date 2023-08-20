@@ -23,7 +23,7 @@ img {
     color: white;
     border-radius: 50px;
     cursor: pointer;
-    transition: background 1s, transform 0.8s;
+    transition: background 1s, transform 1s 0.5s linear;
 }
 
 .circle:hover {
