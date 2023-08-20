@@ -40,7 +40,7 @@ header h1 {
 .banner .welcome {
     background-color: #feb614;
     color: white;
-    padding: 20px;
+    padding: 30px;
     position: absolute;
     left: 0px;
     top: 30%;
@@ -154,6 +154,7 @@ nav li a:hover {
 .images li img:hover {
     position: relative;
     top: -4px;
+    z-index: 0;
 }
 
 .joinform input:focus {
@@ -180,6 +181,31 @@ p::selection {
     color: white;
 }
 
-p::after {
-    content: '...';
+
+/* responsive */
+
+@media screen and (max-width:1000px) {
+    .banner .welcome h2 {
+        font-size: 40px;
+    }
+    nav li {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .banner .welcome {
+        position: relative;
+        text-align: center;
+        padding: 10px;
+    }
+    .banner .welcome br {
+        display: none;
+    }
+    .banner .welcome h2 {
+        font-size: 25px;
+    }
+    .banner .welcome span {
+        font-size: 1em;
+    }
 }
