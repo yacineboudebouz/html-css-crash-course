@@ -49,10 +49,24 @@ body {
     z-index: 1;
     position: absolute;
     top: -30px;
-    animation-name: drive;
-    animation-duration: 3s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
+    animation: drive 3s both infinite linear, jump 0.3s 1.2s ease infinite;
+}
+
+.cloud {
+    position: absolute;
+}
+
+.cloud:nth-child(1) {
+    width: 200px;
+    top: 120px;
+    opacity: 0.5;
+    animation: wind 20s linear infinite reverse;
+}
+
+.cloud:nth-child(2) {
+    width: 300px;
+    top: 0;
+    animation: wind 50s linear infinite reverse;
 }
 
 .luigi {
@@ -62,7 +76,7 @@ body {
     animation-name: drive;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-timing-function: linear;
 }
 
 
@@ -74,5 +88,26 @@ body {
     }
     to {
         transform: translateX(600px);
+    }
+}
+
+@keyframes wind {
+    from {
+        left: -300px;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        top: -40%;
+    }
+    50% {
+        top: -100px;
+    }
+    100% {
+        top: -40px;
     }
 }
